@@ -1,0 +1,59 @@
+<!--
+  ~ Copyright 2020. Huawei Technologies Co., Ltd. All rights reserved.
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="LoadingStyle">
+        <item name="android:indeterminateDuration">1200</item>
+        <item name="android:interpolator">@android:interpolator/accelerate_decelerate</item>
+        <item name="android:indeterminateDrawable">@drawable/loading_anims</item>
+    </style>
+
+    <style name="bigloadingStyle" parent="LoadingStyle">
+        <item name="android:indeterminateDrawable">@drawable/playcontorl_loading_anims</item>
+    </style>
+    <style name="smallloadingStyle" parent="LoadingStyle">
+        <item name="android:indeterminateDrawable">@drawable/small_loading_anims</item>
+    </style>
+
+    <style name="notifaction_title" parent="android:TextAppearance.StatusBar.EventContent.Title">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">regular</item>
+    </style>
+
+    <style name="notifaction_content" parent="android:TextAppearance.StatusBar.EventContent">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">regular</item>
+    </style>
+    <style name="now_playing_list_first_text_style">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#A5ffffff</item>
+    </style>
+    <style name="now_playing_list_second_text_style">
+        <item name="android:textSize">@dimen/list_second_text_size</item>
+        <item name="android:textColor">#A5ffffff</item>
+    </style>
+    <style name="NoCloseButton" parent="@android:style/Widget.ActionButton.CloseMode">
+        <item name="android:visibility">gone</item>
+    </style>
+</resources>
