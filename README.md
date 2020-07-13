@@ -1,12 +1,12 @@
-# Audio Kit
+# HMS Audio Kit
 
 
 ## Table of Contents
 
  * [Introduction](#introduction)
- * [Getting Started](#Getting-Started)
+ * [Getting Started](#getting-started)
  * [Supported Environments](#supported-environments)
- * [Result](#Result)
+ * [Result](#result)
  * [License](#license)
  
 
@@ -33,8 +33,7 @@
 
 
 ## Result
-   <img src="result_1.jpg">
-   <img src="result_2.jpg">
+   <img src="result_1.jpg" width=250 title="result1" div align=center border=5> <img src="result_2.jpg" width=250 title="result2" div align=center border=5>
 
 ##  License
-    AudioKitDemo is licensed under the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+HMS AudioKit Demo is licensed under the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
