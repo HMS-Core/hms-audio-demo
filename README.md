@@ -14,9 +14,11 @@
    AudioKit Android sample code encapsulates APIs of the HUAWEI Audio Kit. It provides many sample programs for your reference or usage.
    The following describes packages of Android sample code.
 
- HwAudioPlayerManager:Manages playback operations such as play, pause, skip back, skip next, stop, and drag the progress bar.
- HwAudioPlayItem:An audio data class. The data includes the album name, artist, whether an audio is online, and others.
- HwAudioQueueManager:Manages audio queues, for example, deletes a specified audio from a queue (playlist).
+ HwAudioPlayerManager: Manages playback operations such as play, pause, skip back, skip next, stop, and drag the progress bar.
+ 
+ HwAudioPlayItem: An audio data class. The data includes the album name, artist, whether an audio is online, and others.
+ 
+ HwAudioQueueManager: Manages audio queues, for example, deletes a specified audio from a queue (playlist).
 	
 ## Getting Started
 
