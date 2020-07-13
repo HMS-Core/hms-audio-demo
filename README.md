@@ -1,4 +1,4 @@
-# HMS Audio Kit
+# HMS AudioKit Demo
 
 
 ## Table of Contents
