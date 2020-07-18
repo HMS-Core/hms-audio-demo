@@ -1,12 +1,12 @@
-# Audio Kit
+# HMS AudioKit Demo
 
 
 ## Table of Contents
 
  * [Introduction](#introduction)
- * [Getting Started](#Getting-Started)
+ * [Getting Started](#getting-started)
  * [Supported Environments](#supported-environments)
- * [Result](#Result)
+ * [Result](#result)
  * [License](#license)
  
 
@@ -14,9 +14,11 @@
    AudioKit Android sample code encapsulates APIs of the HUAWEI Audio Kit. It provides many sample programs for your reference or usage.
    The following describes packages of Android sample code.
 
- HwAudioPlayerManager:Manages playback operations such as play, pause, skip back, skip next, stop, and drag the progress bar.
- HwAudioPlayItem:An audio data class. The data includes the album name, artist, whether an audio is online, and others.
- HwAudioQueueManager:Manages audio queues, for example, deletes a specified audio from a queue (playlist).
+ HwAudioPlayerManager: Manages playback operations such as play, pause, skip back, skip next, stop, and drag the progress bar.
+ 
+ HwAudioPlayItem: An audio data class. The data includes the album name, artist, whether an audio is online, and others.
+ 
+ HwAudioQueueManager: Manages audio queues, for example, deletes a specified audio from a queue (playlist).
 	
 ## Getting Started
 
@@ -33,8 +35,7 @@
 
 
 ## Result
-   <img src="result_1.jpg">
-   <img src="result_2.jpg">
+   <img src="result_1.jpg" width=250 title="result1" div align=center border=5> <img src="result_2.jpg" width=250 title="result2" div align=center border=5>
 
 ##  License
-    AudioKitDemo is licensed under the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+HMS AudioKit Demo is licensed under the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
