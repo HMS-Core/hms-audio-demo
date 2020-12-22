@@ -11,31 +11,34 @@
  
 
 ## Introduction
-   AudioKit Android sample code encapsulates APIs of the HUAWEI Audio Kit. It provides many sample programs for your reference or usage.
-   The following describes packages of Android sample code.
+AudioKit Android sample code encapsulates APIs of the HUAWEI Audio Kit. It provides many sample programs for your reference or usage.
+The following describes packages of Android sample code.
 
- HwAudioPlayerManager: Manages playback operations such as play, pause, skip back, skip next, stop, and drag the progress bar.
+ <b>HwAudioPlayerManager<b>: Manages playback operations such as play, pause, skip back, skip next, stop, and drag the progress bar.
  
- HwAudioPlayItem: An audio data class. The data includes the album name, artist, whether an audio is online, and others.
+ <b>HwAudioPlayItem<b>: An audio data class. The data includes the album name, artist, whether an audio is online, and others.
  
- HwAudioQueueManager: Manages audio queues, for example, deletes a specified audio from a queue (playlist).
+ <b>HwAudioQueueManager<b>: Manages audio queues, for example, deletes a specified audio from a queue (playlist).
 	
 ## Getting Started
 
-   1. Check whether the Android studio development environment is ready. Open the sample code project directory with file "build.gradle" in Android Studio. Run TestApp on your divice or simulator which have installed latest Huawei Mobile Service(HMS).
-   2. Register a [HUAWEI account](https://developer.huawei.com/consumer/en/).
-   3. Create an app and configure the app information in AppGallery Connect. 
-   See details: [HUAWEI Audio Service Development Preparation](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/introduction-0000001050749665)
-   4. To build this demo, please first import the demo in the Android Studio (3.x+).
-   5. Run the sample on your Android device or emulator.
-	
+1. Check whether the Android studio development environment is ready. Open the sample code project directory with file "build.gradle" in Android Studio. Run TestApp on your divice or simulator which have installed latest Huawei Mobile Service(HMS).
+
+2. Register a [HUAWEI account](https://developer.huawei.com/consumer/en/).
+
+3. Create an app and configure the app information in AppGallery Connect. 
+See details: [HUAWEI Audio Service Development Preparation](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/introduction-0000001050749665)
+
+4. To build this demo, please first import the demo in the Android Studio (3.x+).
+
+5. Run the sample on your Android device or emulator.
 	
 ## Supported Environments
-   Android SDK Version >= 21 and JDK version >= 1.7 is recommended.
+Android SDK Version >= 21 and JDK version >= 1.7 is recommended.
 
 
 ## Result
-   <img src="result_1.jpg" width=250 title="result1" div align=center border=5> <img src="result_2.jpg" width=250 title="result2" div align=center border=5>
+<img src="result_1.jpg" width=250 title="result1" div align=center border=5> <img src="result_2.jpg" width=250 title="result2" div align=center border=5>
 
 ## Question or issues
 If you want to evaluate more about HMS Core, [r/HMSCore on Reddit](https://www.reddit.com/r/HuaweiDevelopers/) is for you to keep up with latest news about HMS Core, and to exchange insights with other developers.
