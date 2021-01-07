@@ -35,9 +35,8 @@ See details: [HUAWEI Audio Service Development Preparation](https://developer.hu
 ## Supported Environments
 Android SDK Version >= 21 and JDK version >= 1.7 is recommended.
 
-
 ## Result
-<img src="result_1.jpg" width=250 title="result1" div align=center border=5> <img src="result_2.jpg" width=250 title="result2" div align=center border=5>
+<img src=https://github.com/HMS-Core/hms-audio-demo/blob/master/audio.gif width=30% div align=center border=5> 
 
 ## Question or issues
 If you want to evaluate more about HMS Core, [r/HMSCore on Reddit](https://www.reddit.com/r/HuaweiDevelopers/) is for you to keep up with latest news about HMS Core, and to exchange insights with other developers.
