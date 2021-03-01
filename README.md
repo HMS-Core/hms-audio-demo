@@ -6,34 +6,33 @@
  * [Getting Started](#getting-started)
  * [Supported Environments](#supported-environments)
  * [Result](#result)
+ * [Questions Or Issues](#question-or-issues)
  * [License](#license)
  
 
 ## Introduction
-AudioKit Android sample code encapsulates APIs of the HUAWEI Audio Kit. It provides many sample programs for your reference or usage.
-The following describes packages of Android sample code.
+The sample code encapsulates APIs of HUAWEI Audio Kit for Android with many sample projects for your reference. It provides the following classes:
 
-**HwAudioPlayerManager**: Manages playback operations such as play, pause, skip back, skip next, stop, and drag the progress bar.
+**HwAudioPlayerManager**: Controls audio playback (play, pause, skip back, skip next, stop, and drag the progress bar).
  
-**HwAudioPlayItem**: An audio data class. The data includes the album name, artist, whether an audio is online, and others.
+**HwAudioPlayItem**: Audio data class. Audio data includes the album name, artist, whether an audio file is online, and others.
  
-**HwAudioQueueManager**: Manages audio queues, for example, deletes a specified audio from a queue (playlist).
+**HwAudioQueueManager**: Manages audio queues, for example, deletes specified audio from a queue (playlist).
 	
 ## Getting Started
 
-1. Check whether the Android studio development environment is ready. Open the sample code project directory with file "build.gradle" in Android Studio. Run TestApp on your divice or simulator which have installed latest Huawei Mobile Service(HMS).
+1. Check Android studio environment. Open a sample project with the file "build.gradle" in Android Studio.
 
-2. Register a [HUAWEI account](https://developer.huawei.com/consumer/en/).
+2. Register as a [HUAWEI developer](https://developer.huawei.com/consumer/en/).
 
-3. Create an app and configure the app information in AppGallery Connect. 
-See details: [HUAWEI Audio Service Development Preparation](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/introduction-0000001050749665)
+3. Create an app and configure the app information in AppGallery Connect. For details please refer to [Configuring App Information in AppGallery Connect](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/introduction-0000001050749665)
 
-4. To build this demo, please first import the demo in the Android Studio (3.x+).
+4. Import the demo into Android Studio (3.0 and later) before building it.
 
-5. Run the sample on your Android device or emulator.
+5. Run the test app on your Android device or an emulator.
 	
 ## Supported Environments
-Android SDK：21 and later versions 
+Android SDK：21 and later versions</br>
 JDK 1.8.211 and later versions
 
 ## Result
