@@ -33,7 +33,8 @@ See details: [HUAWEI Audio Service Development Preparation](https://developer.hu
 5. Run the sample on your Android device or emulator.
 	
 ## Supported Environments
-Android SDK Version >= 21 and JDK version >= 1.7 is recommended.
+Android SDK：21 and later versions 
+JDK 1.8.211 and later versions
 
 ## Result
 <img src=https://github.com/HMS-Core/hms-audio-demo/blob/master/audio.gif width=30% div align=center border=5> 
