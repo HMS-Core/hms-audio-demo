@@ -28,7 +28,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * String utils
  *
- * @since 2020-06-01
+ * @since 2020 -06-01
  */
 public final class StringUtils {
 
@@ -41,7 +41,7 @@ public final class StringUtils {
      * [get formatted string]<BR>
      *
      * @param context context
-     * @param secs time in second
+     * @param secs    time in second
      * @return formatted string
      */
     public static String makeTimeString(Context context, long secs) {
@@ -71,7 +71,7 @@ public final class StringUtils {
      * [local time]<BR>
      *
      * @param context context
-     * @param secs time in second
+     * @param secs    time in second
      * @return local time string
      */
     public static String localeString(Context context, long secs) {
@@ -106,4 +106,30 @@ public final class StringUtils {
         return s;
     }
 
+    /**
+     * Is empty boolean.
+     *
+     * @param value the value
+     * @return the boolean
+     */
+    public static boolean isEmpty(CharSequence value) {
+        return null == value || 0 == value.length();
+    }
+
+    /**
+     * Split string [ ].
+     *
+     * @param src   the src
+     * @param split the split
+     * @return the string [ ]
+     */
+    public static String[] split(String src, String split) {
+        if (isEmpty(src) || isEmpty(split)) {
+            return new String[0];
+        }
+        if (!src.contains(split)) {
+            return new String[] {src};
+        }
+        return src.split(split);
+    }
 }

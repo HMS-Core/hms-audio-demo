@@ -16,7 +16,7 @@
   -->
 
 <resources>
-    <string-array name="menu_items" translatable="false">
+    <string-array name="menu_items">
         <item>@string/online_list</item>
         <item>@string/local_list</item>
         <item>@string/set_cache</item>

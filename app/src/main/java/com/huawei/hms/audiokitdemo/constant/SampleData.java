@@ -23,6 +23,7 @@ import android.provider.MediaStore;
 import android.util.Log;
 
 import com.huawei.hms.api.bean.HwAudioPlayItem;
+import com.huawei.hms.audiokitdemo.R;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -105,6 +106,19 @@ public class SampleData {
                     }
                 }
             }
+            songItem = new HwAudioPlayItem();
+            songItem.setAudioTitle("chengshilvren");
+            songItem.setAudioId("chengshilvren".hashCode() + "");
+            songItem.setFilePath("hms_res://chengshilvren");
+            songItem.setSinger("Taoge");
+            playItemList.add(songItem);
+
+            songItem = new HwAudioPlayItem();
+            songItem.setAudioTitle("dayu");
+            songItem.setAudioId("dayu".hashCode() + "");
+            songItem.setFilePath("hms_assets://dayu.mp3");
+            songItem.setSinger("Taoge");
+            playItemList.add(songItem);
         } catch (Exception e) {
             Log.e(TAG, TAG, e);
         } finally {

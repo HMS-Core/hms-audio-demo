@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="1.3"
+                    android:text="EQ_31(db)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/EQ_31"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_shape"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:padding="3dp"
+                    android:textColor="#FFFFFF"
+                    android:textSelectHandle="@color/trans"
+                    android:textCursorDrawable="@drawable/my_cursor"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="1.3"
+                    android:text="EQ_62(db)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/EQ_62"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_shape"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:padding="3dp"
+                    android:textColor="#FFFFFF"
+                    android:textSelectHandle="@color/trans"
+                    android:textCursorDrawable="@drawable/my_cursor"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="1.3"
+                    android:text="EQ_125(db)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/EQ_125"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_shape"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:padding="3dp"
+                    android:textColor="#FFFFFF"
+                    android:textSelectHandle="@color/trans"
+                    android:textCursorDrawable="@drawable/my_cursor"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="1.3"
+                    android:text="EQ_250(db)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/EQ_250"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_shape"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:padding="3dp"
+                    android:textColor="#FFFFFF"
+                    android:textSelectHandle="@color/trans"
+                    android:textCursorDrawable="@drawable/my_cursor"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="1.3"
+                    android:text="EQ_500(db)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/EQ_500"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_shape"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:padding="3dp"
+                    android:textColor="#FFFFFF"
+                    android:textSelectHandle="@color/trans"
+                    android:textCursorDrawable="@drawable/my_cursor"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="1.3"
+                    android:text="EQ_1K(db)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/EQ_1K"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_shape"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:padding="3dp"
+                    android:textColor="#FFFFFF"
+                    android:textSelectHandle="@color/trans"
+                    android:textCursorDrawable="@drawable/my_cursor"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="1.3"
+                    android:text="EQ_2K(db)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/EQ_2K"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_shape"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:padding="3dp"
+                    android:textColor="#FFFFFF"
+                    android:textSelectHandle="@color/trans"
+                    android:textCursorDrawable="@drawable/my_cursor"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="1.3"
+                    android:text="EQ_4K(db)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/EQ_4K"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_shape"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:padding="3dp"
+                    android:textColor="#FFFFFF"
+                    android:textSelectHandle="@color/trans"
+                    android:textCursorDrawable="@drawable/my_cursor"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="1.3"
+                    android:text="EQ_8K(db)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/EQ_8K"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_shape"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:padding="3dp"
+                    android:textColor="#FFFFFF"
+                    android:textSelectHandle="@color/trans"
+                    android:textCursorDrawable="@drawable/my_cursor"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="1.3"
+                    android:text="EQ_16K(db)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/EQ_16K"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_shape"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:padding="3dp"
+                    android:textColor="#FFFFFF"
+                    android:textSelectHandle="@color/trans"
+                    android:textCursorDrawable="@drawable/my_cursor"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="1.3"
+                    android:text="@string/sound_bass"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/ultra_low_stress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_shape"
+                    android:inputType="numberSigned"
+                    android:maxLength="2"
+                    android:padding="3dp"
+                    android:textColor="#FFFFFF"
+                    android:textSelectHandle="@color/trans"
+                    android:textCursorDrawable="@drawable/my_cursor"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="1.3"
+                    android:text="@string/high_ambient_sound"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/encircling_sound"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_shape"
+                    android:inputType="numberSigned"
+                    android:maxLength="2"
+                    android:padding="3dp"
+                    android:textSelectHandle="@color/trans"
+                    android:textColor="#FFFFFF"
+                    android:textCursorDrawable="@drawable/my_cursor"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="1.3"
+                    android:text="@string/high_channel_balance"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/channel_balance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_shape"
+                    android:textColorHint="#88ffffff"
+                    android:inputType="numberSigned"
+                    android:maxLength="2"
+                    android:padding="3dp"
+                    android:textColor="#FFFFFF"
+                    android:textCursorDrawable="@drawable/my_cursor"
+                    android:textSelectHandle="@color/trans"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/equalizer_save" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+

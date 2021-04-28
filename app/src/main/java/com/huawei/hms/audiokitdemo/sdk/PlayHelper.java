@@ -28,19 +28,23 @@ import android.util.Log;
 import com.huawei.hms.api.bean.HwAudioPlayItem;
 import com.huawei.hms.audiokit.player.callback.HwAudioConfigCallBack;
 import com.huawei.hms.audiokit.player.manager.HwAudioConfigManager;
+import com.huawei.hms.audiokit.player.manager.HwAudioEffectManager;
 import com.huawei.hms.audiokit.player.manager.HwAudioManager;
 import com.huawei.hms.audiokit.player.manager.HwAudioManagerFactory;
 import com.huawei.hms.audiokit.player.manager.HwAudioPlayerConfig;
 import com.huawei.hms.audiokit.player.manager.HwAudioPlayerManager;
 import com.huawei.hms.audiokit.player.manager.HwAudioQueueManager;
 import com.huawei.hms.audiokit.player.manager.HwAudioStatusListener;
+import com.huawei.hms.audiokit.player.soundeffect.callback.SetSoundEffectCallback;
+import com.huawei.hms.audiokit.player.soundeffect.callback.SetSoundEffectListener;
+import com.huawei.hms.audiokit.soundeffect.bean.HwAudioEffectItem;
 import com.huawei.hms.audiokitdemo.constant.SampleData;
+import com.huawei.hms.audiokitdemo.helper.SoundEffectHelper;
+import com.huawei.hms.audiokitdemo.utils.MathUtils;
+import com.huawei.hms.audiokitdemo.utils.StringUtils;
 
-import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
@@ -68,6 +72,8 @@ public class PlayHelper {
 
     private SampleData sampleData = new SampleData();
 
+    private HwAudioEffectManager effectManager;
+
     private PlayHelper() {
     }
 
@@ -78,6 +84,21 @@ public class PlayHelper {
      */
     public static PlayHelper getInstance() {
         return INSTANCE;
+    }
+
+    /**
+     * Set effect.
+     *
+     * @param hwAudioEffectItem   the hw audio effect item
+     * @param soundEffectListener the sound effect listener
+     */
+    public void setEffect(HwAudioEffectItem hwAudioEffectItem, SetSoundEffectListener soundEffectListener){
+        if (hwAudioEffectItem != null) {
+            if (!SoundEffectHelper.getInstance().isEffectOn()) {
+                SoundEffectHelper.getInstance().setEffectSwitch(true);
+            }
+            SoundEffectHelper.getInstance().setEffect(hwAudioEffectItem, new SetSoundEffectCallback(soundEffectListener));
+        }
     }
 
     /**
@@ -101,6 +122,8 @@ public class PlayHelper {
                             mHwAudioPlayerManager = hwAudioManager.getPlayerManager();
                             mHwAudioQueueManager = hwAudioManager.getQueueManager();
                             mHwAudioConfigManager = hwAudioManager.getConfigManager();
+                            // 获取音效实例
+                            effectManager = hwAudioManager.getEffectManager();
                             doRestInit(context);
                         } catch (Exception e) {
                             Log.e(TAG, "player init fail", e);
@@ -224,7 +247,13 @@ public class PlayHelper {
         item.setAudioId(String.valueOf(path.hashCode()));
         if (path.startsWith("http") || path.startsWith("https")) {
             item.setOnline(1);
-            item.setOnlinePath(path);
+            String[] stringArray = StringUtils.split(path, "contentlength");
+            if (stringArray.length == 2) {
+                item.setOnlinePath(stringArray[0]);
+                item.setContentLength(MathUtils.parseInt(stringArray[1], 0));
+            } else {
+                item.setOnlinePath(path);
+            }
         } else {
             item.setOnline(0);
             item.setFilePath(path);
@@ -430,6 +459,14 @@ public class PlayHelper {
      */
     public boolean isQueueEmpty() {
         return mHwAudioQueueManager != null && mHwAudioQueueManager.isQueueEmpty();
+    }
+
+    /**
+     * getEffectManager
+     * @return effectManager
+     */
+    public HwAudioEffectManager getEffectManager() {
+        return effectManager;
     }
 
     /**

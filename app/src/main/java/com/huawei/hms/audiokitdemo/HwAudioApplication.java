@@ -35,6 +35,8 @@ import com.huawei.hms.audiokitdemo.sdk.PlayHelper;
 public class HwAudioApplication extends Application {
     private static final String TAG = "HwAudioApplication";
 
+    private static Context context;
+
     private static class ClickEventReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -51,9 +53,14 @@ public class HwAudioApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        context = getApplicationContext();
         IntentFilter intent = new IntentFilter();
         intent.addAction(PlayActions.CANCEL_NOTIFICATION);
         registerReceiver(mClickEventReceiver, intent);
         PlayHelper.getInstance().init(this);
+    }
+
+    public static Context getContext() {
+        return context;
     }
 }

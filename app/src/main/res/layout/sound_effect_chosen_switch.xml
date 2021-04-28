@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:id="@+id/tv1"
+        android:text="@string/selected_sound_effects"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        bind:layout_constraintStart_toStartOf="parent"
+        bind:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:id="@+id/tv_sound"
+        android:layout_marginStart="8dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        bind:layout_constraintStart_toEndOf="@id/tv1"
+        bind:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_marginTop="2dp"
+        android:text="@string/selected_sound_effects_des"
+        android:textColor="#A6FFFFFF"
+        android:textSize="12sp"
+        bind:layout_constraintTop_toBottomOf="@id/tv1"
+        bind:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/sound_effect_switch"
+        bind:layout_constraintTop_toTopOf="parent"
+        bind:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        bind:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/btn_sound_switch_light_on"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:scaleType="centerCrop" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

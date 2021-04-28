@@ -37,4 +37,51 @@
     <string name="unknowsong" priority="translator">未知歌曲</string>
     <string name="unknown_artist_name" priority="LT">未知艺术家</string>
     <string name="no_songs" priority="LT">"暂无歌曲"</string>
+
+    <string name="sound_effect_voice">"绝美人声"</string>
+    <string name="sound_ethereal">"空灵轻音"</string>
+    <string name="sound_roation_3d">"3D 旋转"</string>
+    <string name="strong_bass">"超重低音"</string>
+    <string name="car">"车载音效"</string>
+
+    <string name="dolby_rock">"摇滚"</string>
+    <string name="dolby_jazz">"爵士"</string>
+    <string name="dolby_pop">"流行"</string>
+    <string name="dolby_classical">"古典"</string>
+
+    <string name="dolby_dance">"舞曲"</string>
+    <string name="sound_soft_treble">"低音"</string>
+    <string name="sound_voice">"人声"</string>
+    <string name="dolby_blues">"蓝调"</string>
+    <string name="sound_sluggish">"慢歌"</string>
+    <string name="sound_country">"乡村"</string>
+    <string name="sound_electronic">"电音"</string>
+
+    <string name="featured">"精选"</string>
+    <string name="common">"普通"</string>
+    <string name="equilibrium">"均衡"</string>
+
+    <string name="sound_bass_des">"超震撼重低音，给您的手机加上低音炮"</string>
+    <string name="sound_ethereal_des_cn">"乐器结构更明晰，中高音强而有力"</string>
+    <string name="sound_3d_des">"还原 3D 声场的空间感和方位感，犹如沉浸其中"</string>
+    <string name="sound_roation_3d_des">"360 度动态旋转，带给您奇特有趣的听歌体验"</string>
+    <string name="sound_fantasy_acg_des">"声临其境，进入二次元的梦幻世界"</string>
+
+    <string name="sound_effect">"音效"</string>
+
+    <string name="rename_sound_effect">"自定义音效名称"</string>
+    <string name="save">确定</string>
+    <string name="cancle">取消</string>
+    <string name="sound_bass" priority="translator">"超重低音"</string>
+    <string name="high_ambient_sound" priority="translator">"环绕效果"</string>
+    <string name="high_channel_balance" priority="translator">"声道平衡"</string>
+    <string name="equalizer_save" priority="translator">保存</string>
+
+    <string name="use">使用</string>
+    <string name="using">使用中</string>
+
+    <string name="selected_sound_effects_des" priority="translator">"为您提供个性化听歌体验"</string>
+    <string name="selected_sound_effects" priority="translator">"精选音效："</string>
+    <string name="cur_using_effect">"当前使用音效："</string>
+
 </resources>

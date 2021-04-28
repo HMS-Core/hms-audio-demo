@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:src="@drawable/sound_effect_chosen_tips"
+    android:layout_width="match_parent"
+    android:layout_height="158dp">
+
+</ImageView>

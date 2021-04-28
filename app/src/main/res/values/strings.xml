@@ -45,4 +45,51 @@
     <string name="unknowsong" priority="translator">Unknown song</string>
     <string name="unknown_artist_name" priority="LT">Unknown artist</string>
     <string name="no_songs" priority="LT">"Empty playlist"</string>
+
+    <string name="sound_effect_voice">"Choral"</string>
+    <string name="sound_ethereal">"Ethereal"</string>
+    <string name="sound_roation_3d">"3D rotation"</string>
+    <string name="strong_bass">"Sub-bass"</string>
+    <string name="car">"On-board sound"</string>
+
+    <string name="dolby_rock">Rock</string>
+    <string name="dolby_jazz">Jazz</string>
+    <string name="dolby_pop">Pop</string>
+    <string name="dolby_classical">Classical</string>
+
+    <string name="dolby_dance">"dance"</string>
+    <string name="sound_soft_treble">"Bass"</string>
+    <string name="sound_voice">"Voice"</string>
+    <string name="dolby_blues">"Blues"</string>
+    <string name="sound_sluggish">"Relaxed"</string>
+    <string name="sound_country">"Country"</string>
+    <string name="sound_electronic">"Electro"</string>
+
+    <string name="sound_bass_des">"Enhanced bass to feel the beat."</string>
+    <string name="sound_ethereal_des_cn">"Ultra-clear effect, makes each individual instrument and note stand out."</string>
+    <string name="sound_3d_des">"Simulates the depth of a 3D sound field for immersive listening."</string>
+    <string name="sound_roation_3d_des">"Dynamic 360-degree rotation effect"</string>
+    <string name="sound_fantasy_acg_des">"Let the fantasy vibe carry you away"</string>
+
+    <string name="sound_effect">"sound effect"</string>
+
+    <string name="featured">"Featured"</string>
+    <string name="common">"Common"</string>
+    <string name="equilibrium">"Equilibrium"</string>
+    <string name="rename_sound_effect">"Rename"</string>
+
+    <string name="save">OK</string>
+    <string name="cancle">Cancle</string>
+    <string name="sound_bass" priority="translator">Mega bass</string>
+    <string name="high_ambient_sound" priority="LT">Surround</string>
+    <string name="high_channel_balance" priority="LT">Balance</string>
+    <string name="equalizer_save" priority="translator">Save</string>
+
+    <string name="use">Use</string>
+    <string name="using">Using</string>
+
+    <string name="selected_sound_effects_des">Personalize your listening.</string>
+    <string name="selected_sound_effects">Featured sound effect:</string>
+    <string name="cur_using_effect">"Current effect:"</string>
+
 </resources>

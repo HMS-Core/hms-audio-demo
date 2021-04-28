@@ -23,6 +23,13 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <!-- Base application theme. -->
+    <style name="AppThemeSound" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/black_100_opacity</item>
+        <item name="colorPrimaryDark">@color/black_100_opacity</item>
+        <item name="colorAccent">@color/black_100_opacity</item>
+    </style>
     <style name="LoadingStyle">
         <item name="android:indeterminateDuration">1200</item>
         <item name="android:interpolator">@android:interpolator/accelerate_decelerate</item>

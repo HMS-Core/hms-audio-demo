@@ -19,6 +19,7 @@ package com.huawei.hms.audiokitdemo;
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
@@ -32,6 +33,7 @@ import android.widget.Toast;
 import com.huawei.hms.api.bean.HwAudioPlayItem;
 import com.huawei.hms.audiokit.player.manager.HwAudioStatusListener;
 import com.huawei.hms.audiokitdemo.sdk.PlayHelper;
+import com.huawei.hms.audiokitdemo.ui.effect.SoundEffectActivity;
 import com.huawei.hms.audiokitdemo.ui.nowplaying.NowPlayingFragment;
 import com.huawei.hms.audiokitdemo.ui.playbutton.PlayControlButtonFragment;
 import com.huawei.hms.audiokitdemo.ui.seek.SeekBarFragment;
@@ -186,6 +188,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initViews() {
         mSongName = ViewUtils.findViewById(this, R.id.songName);
         mSingerName = ViewUtils.findViewById(this, R.id.singerName);
+
+        ViewUtils.findViewById(this, R.id.tv_sound).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SoundEffectActivity.class));
+            }
+        });
 
         mSeekBarFragment = SeekBarFragment.newInstance();
         addFragment(R.id.pro_layout, mSeekBarFragment);
