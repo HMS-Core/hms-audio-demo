@@ -37,7 +37,7 @@ Android SDK：21及以上版本
 JDK：1.7及以上版本
 
 ## 运行结果
-<img src=“audio.gif” width=30% > 
+<img src="audio.gif" width=30% > 
 
 ## 技术支持
 如果您对HMS Core还处于评估阶段，可在[Reddit社区](https://www.reddit.com/r/HuaweiDevelopers/)获取关于HMS Core的最新讯息，并与其他开发者交流见解。
