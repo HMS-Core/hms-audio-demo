@@ -1,4 +1,6 @@
-# HMS AudioKit Demo
+# HUAWEI Audio Kit Sample
+
+English | [中文](README_ZH.md)
 
 ## Table of Contents
 
@@ -8,24 +10,24 @@
  * [Result](#result)
  * [Questions Or Issues](#question-or-issues)
  * [License](#license)
- 
+
 
 ## Introduction
 The sample code encapsulates APIs of HUAWEI Audio Kit for Android with many sample projects for your reference. It provides the following classes:
 
 **HwAudioPlayerManager**: Controls audio playback (play, pause, skip back, skip next, stop, and drag the progress bar).
- 
+
 **HwAudioPlayItem**: Audio data class. Audio data includes the album name, artist, whether an audio file is online, and others.
- 
+
 **HwAudioQueueManager**: Manages audio queues, for example, deletes specified audio from a queue (playlist).
 	
 ## Getting Started
 
 1. Check Android studio environment. Open a sample project with the file "build.gradle" in Android Studio.
 
-2. Register as a [HUAWEI developer](https://developer.huawei.com/consumer/en/).
+2. Register as a [HUAWEI developer](https://developer.huawei.com/consumer/en/?ha_source=hms1).
 
-3. Create an app and configure the app information in AppGallery Connect. For details please refer to [Configuring App Information in AppGallery Connect](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/introduction-0000001050749665)
+3. Create an app and configure the app information in AppGallery Connect. For details please refer to [Configuring App Information in AppGallery Connect](https://developer.huawei.com/consumer/en/doc/development/Media-Guides/introduction-0000001050749665?ha_source=hms1)
 
 4. Import the demo into Android Studio (3.0 and later) before building it.
 
@@ -36,7 +38,7 @@ Android SDK：21 and later versions</br>
 JDK 1.8.211 and later versions
 
 ## Result
-<img src=https://github.com/HMS-Core/hms-audio-demo/blob/master/audio.gif width=30% div align=center border=5> 
+<img src=“audio.gif”  width=30% > 
 
 ## Question or issues
 If you want to evaluate more about HMS Core, [r/HMSCore on Reddit](https://www.reddit.com/r/HuaweiDevelopers/) is for you to keep up with latest news about HMS Core, and to exchange insights with other developers.

@@ -1,5 +1,7 @@
 # 华为音频服务示例代码
 
+[English](README.md) | 中文
+
 ## 目录
 
  * [简介](#简介)
@@ -12,19 +14,19 @@
 本示例代码封装华为音频服务（HUAWEI Audio Kit）安卓接口，提供多个样例项目供您参考。其中包含以下类：
 
 **HwAudioPlayerManager**: 音频播放管理类（包括播放、暂停、上一首、下一首、停止播放、拖拽进度条）。
- 
+
 **HwAudioPlayItem**: 音频数据类。音频数据主要包括专辑名、艺术家名以及音频是否在线等。
- 
+
 **HwAudioQueueManager**: 音频列表管理类。比如从某个播放列表中删除特定音频。
 	
 ## 开发准备
 
 1. 检查Android Studio开发环境。在Android Studio中打开示例项目，其中含有 "build.gradle" 文件。
 
-2. 在[华为开发者联盟](https://developer.huawei.com/consumer/en/)上注册开发者账号。
+2. 在[华为开发者联盟](https://developer.huawei.com/consumer/en/?ha_source=hms1)上注册开发者账号。
 
 3. 在AppGallery Connect上创建一个应用并配置应用信息。具体请参阅
-具体请参阅[配置AppGallery Connect](https://developer.huawei.com/consumer/cn/doc/development/HMSCore-Guides/introduction-0000001050749665)
+具体请参阅[配置AppGallery Connect](https://developer.huawei.com/consumer/en/doc/development/Media-Guides/introduction-0000001050749665?ha_source=hms1)
 
 4. 构建此Demo前，请将其导入Android Studio（3.0及以上版本）。
 
@@ -35,7 +37,7 @@ Android SDK：21及以上版本
 JDK：1.7及以上版本
 
 ## 运行结果
-<img src=https://github.com/HMS-Core/hms-audio-demo/blob/master/audio.gif width=30% div align=center border=5> 
+<img src=“audio.gif” width=30% > 
 
 ## 技术支持
 如果您对HMS Core还处于评估阶段，可在[Reddit社区](https://www.reddit.com/r/HuaweiDevelopers/)获取关于HMS Core的最新讯息，并与其他开发者交流见解。
