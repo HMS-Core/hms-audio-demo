@@ -38,7 +38,7 @@ Android SDK：21 and later versions</br>
 JDK 1.8.211 and later versions
 
 ## Result
-<img src=“audio.gif”  width=30% > 
+<img src="audio.gif" width=30% > 
 
 ## Question or issues
 If you want to evaluate more about HMS Core, [r/HMSCore on Reddit](https://www.reddit.com/r/HuaweiDevelopers/) is for you to keep up with latest news about HMS Core, and to exchange insights with other developers.
