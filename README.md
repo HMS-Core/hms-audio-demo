@@ -1,54 +1,51 @@
-# HUAWEI Audio Kit Sample
+﻿# HMS Core Audio Kit Sample Code
 
 English | [中文](README_ZH.md)
 
-## Table of Contents
+## Contents
 
- * [Introduction](#introduction)
- * [Getting Started](#getting-started)
- * [Supported Environments](#supported-environments)
- * [Result](#result)
- * [Questions Or Issues](#question-or-issues)
- * [License](#license)
-
+ * [Introduction](#Introduction)
+ * [Preparations](#Preparations)
+ * [Environment Requirements](#Environment-Requirements)
+ * [Result](#Result)
+ * [License](#License)
 
 ## Introduction
-The sample code encapsulates APIs of HUAWEI Audio Kit for Android with many sample projects for your reference. It provides the following classes:
+The sample code encapsulates the Android APIs of Audio Kit and offers several sample projects. The following classes are provided:
 
-**HwAudioPlayerManager**: Controls audio playback (play, pause, skip back, skip next, stop, and drag the progress bar).
+**HwAudioPlayerManager**: controls audio playback (plays, pauses, skips back, skips next, stops, and drags the progress bar).
 
-**HwAudioPlayItem**: Audio data class. Audio data includes the album name, artist, whether an audio file is online, and others.
+**HwAudioPlayItem**: manages audio data, including the album name, artist name, and whether the audio is online.
 
-**HwAudioQueueManager**: Manages audio queues, for example, deletes specified audio from a queue (playlist).
+**HwAudioQueueManager**: manages the audio list. For example, delete a specified audio from an audio list.
 	
-## Getting Started
+## Preparations
 
-1. Check Android studio environment. Open a sample project with the file "build.gradle" in Android Studio.
+1. Install Android Studio on your computer. Open the demo project in Android Studio. You can find **build.gradle** files in the project.
 
-2. Register as a [HUAWEI developer](https://developer.huawei.com/consumer/en/?ha_source=hms1).
+2. Register as a developer on [HUAWEI Developers](https://developer.huawei.com/consumer/en/?ha_source=hms1).
 
-3. Create an app and configure the app information in AppGallery Connect. For details please refer to [Configuring App Information in AppGallery Connect](https://developer.huawei.com/consumer/en/doc/development/Media-Guides/introduction-0000001050749665?ha_source=hms1)
+3. [Create an app and configure its information in AppGallery Connect](https://developer.huawei.com/consumer/en/doc/development/Media-Guides/config-agc-0000001050709636?ha_source=hms1).
 
-4. Import the demo into Android Studio (3.0 and later) before building it.
+4. Import the demo into Android Studio (version 3.0 or later) before building it.
 
-5. Run the test app on your Android device or an emulator.
+5. Run the demo app on an Android device or simulator.
 	
-## Supported Environments
-Android SDK：21 and later versions</br>
-JDK 1.8.211 and later versions
+## Environment Requirements
+Android SDK: 21 or later
+JDK version: 1.7 or later
 
 ## Result
 <img src="audio.gif" width=30% > 
 
-## Question or issues
-If you want to evaluate more about HMS Core, [r/HMSCore on Reddit](https://www.reddit.com/r/HuaweiDevelopers/) is for you to keep up with latest news about HMS Core, and to exchange insights with other developers.
+## Technical Support
+You can visit the [Reddit community](https://www.reddit.com/r/HuaweiDevelopers/) to obtain the latest information about HMS Core and communicate with other developers.
 
-If you have questions about how to use HMS samples, try the following options:
-- [Stack Overflow](https://stackoverflow.com/questions/tagged/huawei-mobile-services) is the best place for any programming questions. Be sure to tag your question with 
-`huawei-mobile-services`.
-- [Huawei Developer Forum](https://forums.developer.huawei.com/forumPortal/en/home?fid=0101187876626530001) HMS Core Module is great for general questions, or seeking recommendations and opinions.
+If you have any questions about the sample code, try the following:
+- Visit [Stack Overflow](https://stackoverflow.com/questions/tagged/huawei-mobile-services?tab=Votes), submit your questions, and tag them with `huawei-mobile-services`. Huawei experts will answer your questions.
+- Visit the HMS Core section in the [HUAWEI Developer Forum](https://forums.developer.huawei.com/forumPortal/en/home?fid=0101187876626530001?ha_source=hms1) and communicate with other developers.
 
-If you run into a bug in our samples, please submit an [issue](https://github.com/HMS-Core/hms-audio-demo/issues) to the Repository. Even better you can submit a [Pull Request](https://github.com/HMS-Core/hms-audio-demo/pulls) with a fix.
+If you encounter any issues when using the sample code, submit your [issues](https://github.com/HMS-Core/hms-audio-demo/issues) or submit a [pull request](https://github.com/HMS-Core/hms-audio-demo/pulls).
 
 ##  License
-HMS AudioKit Demo is licensed under the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+The sample code is licensed under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
