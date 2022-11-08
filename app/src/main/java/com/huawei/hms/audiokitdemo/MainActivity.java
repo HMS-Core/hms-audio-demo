@@ -21,6 +21,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -66,6 +67,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView mSongName;
 
     private TextView mSingerName;
+
+    private TextView mCurrentPlaySpeed;
 
     private static class CacheDialogNegativeButtonClickListener implements DialogInterface.OnClickListener {
         @Override
@@ -166,15 +169,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 mNowPlayingFragment.updatePlayingPos();
             }
             PlayModeUtils.getInstance().updatePlayMode(MainActivity.this, mPlayModeView);
+            if (mCurrentPlaySpeed != null) {
+                mCurrentPlaySpeed.setText(PlayHelper.getInstance().getPlaySpeed()+"");
+            }
         }
     };
-
 
     @Override
     protected void onResume() {
         super.onResume();
         checkReadPermission();
         PlayModeUtils.getInstance().updatePlayMode(this, mPlayModeView);
+        if (mCurrentPlaySpeed != null) {
+            mCurrentPlaySpeed.setText(PlayHelper.getInstance().getPlaySpeed()+"");
+        }
     }
 
     @Override
@@ -213,6 +221,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mPlayModeView = ViewUtils.findViewById(this, R.id.playmode_imagebutton);
         mPlayModeView.setOnClickListener(this);
+
+        TextView mPlaySpeed = ViewUtils.findViewById(this, R.id.tv_play_speed);
+        mPlaySpeed.setOnClickListener(this);
+        mCurrentPlaySpeed = ViewUtils.findViewById(this, R.id.tv_cur_play_speed);
     }
 
     private void addFragment(int id, Fragment fragment) {
@@ -233,6 +245,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.setting_content_layout:
                 showMenuDialog();
+                break;
+            case R.id.tv_play_speed:
+                showPlaySpeedMenuDialog();
                 break;
             default:
                 break;
@@ -255,12 +270,37 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * checkReadPermission
      */
     private void checkReadPermission() {
-        if (ContextCompat.checkSelfPermission(this,
-                Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this,
-                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE},
-                    1);
+        Log.i(TAG, "checkReadPermission： " + Build.VERSION.SDK_INT);
+        String permission;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            permission = Manifest.permission.READ_MEDIA_VIDEO;
+        } else {
+            permission = Manifest.permission.READ_EXTERNAL_STORAGE;
         }
+        boolean readIsGranted = ContextCompat.checkSelfPermission(this, permission) == PackageManager.PERMISSION_GRANTED;
+        Log.i(TAG, "checkReadPermission： readIsGranted == " + readIsGranted);
+        if (readIsGranted) {
+            return;
+        }
+        ActivityCompat.requestPermissions(this,
+                new String[]{permission},
+                1);
+    }
+
+    /**
+     * 展示设置倍速弹框
+     */
+    private void showPlaySpeedMenuDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setItems(R.array.menu_play_speed_items, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Log.i(TAG, "showPlaySpeedMenuDialog,which: " + which);
+                PlayHelper.getInstance().setPlaySpeed(which);
+                mCurrentPlaySpeed.setText(PlayHelper.getInstance().getPlaySpeed()+"");
+            }
+        });
+        builder.create().show();
     }
 
     private void showMenuDialog() {

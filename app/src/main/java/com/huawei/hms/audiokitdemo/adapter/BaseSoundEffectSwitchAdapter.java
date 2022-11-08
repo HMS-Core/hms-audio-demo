@@ -72,9 +72,10 @@ class BaseSoundEffectSwitchAdapter extends DelegateAdapter.Adapter<BaseSoundEffe
 
     @Override
     public void onBindViewHolder(@NonNull final SoundSwitchViewHolder holder, int position) {
-        boolean isEffectOn = SoundEffectHelper.getInstance().isEffectOn();
-        Log.i(TAG, ";isEffectOn == " + isEffectOn);
-        if (isEffectOn) {
+        // 获取精选音效是否打开
+        boolean soundChosenLightOn = SoundEffectHelper.getInstance().getSoundChosenLightOn();
+        Log.i(TAG, ";soundChosenLightOn == " + soundChosenLightOn);
+        if (soundChosenLightOn) {
             opening = true;
             holder.soundEffectSwitch.setImageDrawable(context.getResources().getDrawable(R.drawable.btn_sound_switch_light_on));
         } else {
@@ -90,8 +91,10 @@ class BaseSoundEffectSwitchAdapter extends DelegateAdapter.Adapter<BaseSoundEffe
                     opening = !opening;
                     if (opening) {
                         SoundEffectHelper.getInstance().setEffectSwitch(true);
+                        SoundEffectHelper.getInstance().setSoundChosenLightOn(true);
                     } else {
                         SoundEffectHelper.getInstance().setEffectSwitch(false);
+                        SoundEffectHelper.getInstance().setSoundChosenLightOn(false);
                     }
                     soundEffectSwitchOnClick.click(opening);
                     notifyDataSetChanged();

@@ -8,8 +8,6 @@ public class OrdinaryBean {
 
     public String resId;
 
-    public int type;
-
     public OrdinaryBean(String name) {
         this.name = name;
     }

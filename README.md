@@ -1,51 +1,40 @@
-﻿# HMS Core Audio Kit Sample Code
+# Audio Kit
 
-English | [中文](README_ZH.md)
 
-## Contents
+## Table of Contents
 
- * [Introduction](#Introduction)
- * [Preparations](#Preparations)
- * [Environment Requirements](#Environment-Requirements)
+ * [Introduction](#introduction)
+ * [Getting Started](#Getting-Started)
+ * [Supported Environments](#supported-environments)
  * [Result](#Result)
- * [License](#License)
+ * [License](#license)
+ 
 
 ## Introduction
-The sample code encapsulates the Android APIs of Audio Kit and offers several sample projects. The following classes are provided:
+   AudioKit Android sample code encapsulates APIs of the HUAWEI Audio Kit. It provides many sample programs for your reference or usage.
+   The following describes packages of Android sample code.
 
-**HwAudioPlayerManager**: controls audio playback (plays, pauses, skips back, skips next, stops, and drags the progress bar).
-
-**HwAudioPlayItem**: manages audio data, including the album name, artist name, and whether the audio is online.
-
-**HwAudioQueueManager**: manages the audio list. For example, delete a specified audio from an audio list.
+ HwAudioPlayerManager:Manages playback operations such as play, pause, skip back, skip next, stop, and drag the progress bar.
+ HwAudioPlayItem:An audio data class. The data includes the album name, artist, whether an audio is online, and others.
+ HwAudioQueueManager:Manages audio queues, for example, deletes a specified audio from a queue (playlist).
 	
-## Preparations
+## Getting Started
 
-1. Install Android Studio on your computer. Open the demo project in Android Studio. You can find **build.gradle** files in the project.
-
-2. Register as a developer on [HUAWEI Developers](https://developer.huawei.com/consumer/en/?ha_source=hms1).
-
-3. [Create an app and configure its information in AppGallery Connect](https://developer.huawei.com/consumer/en/doc/development/Media-Guides/config-agc-0000001050709636?ha_source=hms1).
-
-4. Import the demo into Android Studio (version 3.0 or later) before building it.
-
-5. Run the demo app on an Android device or simulator.
+   1. Check whether the Android studio development environment is ready. Open the sample code project directory with file "build.gradle" in Android Studio. Run TestApp on your divice or simulator which have installed latest Huawei Mobile Service(HMS).
+   2. Register a [HUAWEI account](https://developer.huawei.com/consumer/en/).
+   3. Create an app and configure the app information in AppGallery Connect. 
+   See details: [HUAWEI Audio Service Development Preparation](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides-V5/config-agc-0000001050709636-V5)
+   4. To build this demo, please first import the demo in the Android Studio (3.x+).
+   5. Run the sample on your Android device or emulator.
 	
-## Environment Requirements
-Android SDK: 21 or later
-JDK version: 1.7 or later
+	
+## Supported Environments
+   Android SDK Version >= 21 and JDK version >= 1.7 is recommended.
+
 
 ## Result
-<img src="audio.gif" width=30% > 
-
-## Technical Support
-You can visit the [Reddit community](https://www.reddit.com/r/HuaweiDevelopers/) to obtain the latest information about HMS Core and communicate with other developers.
-
-If you have any questions about the sample code, try the following:
-- Visit [Stack Overflow](https://stackoverflow.com/questions/tagged/huawei-mobile-services?tab=Votes), submit your questions, and tag them with `huawei-mobile-services`. Huawei experts will answer your questions.
-- Visit the HMS Core section in the [HUAWEI Developer Forum](https://forums.developer.huawei.com/forumPortal/en/home?fid=0101187876626530001?ha_source=hms1) and communicate with other developers.
-
-If you encounter any issues when using the sample code, submit your [issues](https://github.com/HMS-Core/hms-audio-demo/issues) or submit a [pull request](https://github.com/HMS-Core/hms-audio-demo/pulls).
+   <img src="result_1.jpg">
+   <img src="result_2.jpg">
 
 ##  License
-The sample code is licensed under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+    AudioKitDemo is licensed under the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).

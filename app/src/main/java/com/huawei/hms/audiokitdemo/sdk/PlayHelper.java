@@ -74,6 +74,11 @@ public class PlayHelper {
 
     private HwAudioEffectManager effectManager;
 
+    /**
+     * 倍率数组
+     */
+    private String[] speedValues = {"0.5", "0.75", "1", "1.25", "1.5", "2"};
+
     private PlayHelper() {
     }
 
@@ -538,5 +543,32 @@ public class PlayHelper {
         }
         size = Math.min(size, 200 * SIZE_M);
         mHwAudioConfigManager.setPlayCacheSize(size * SIZE_M);
+    }
+
+    /**
+     * set Play Speed
+     *
+     * @param index
+     */
+    public void setPlaySpeed(int index){
+        Log.i(TAG, "setPlaySpeed: " + index);
+        if (mHwAudioPlayerManager == null) {
+            Log.w(TAG, "setPlaySpeed err");
+            return;
+        }
+        mHwAudioPlayerManager.setPlaySpeed(Float.valueOf(speedValues[index]));
+    }
+
+    /**
+     * get Play Speed
+     *
+     */
+    public float getPlaySpeed(){
+        Log.i(TAG, "getPlaySpeed");
+        if (mHwAudioPlayerManager == null) {
+            Log.w(TAG, "getPlaySpeed err");
+            return 0;
+        }
+        return mHwAudioPlayerManager.getPlaySpeed();
     }
 }

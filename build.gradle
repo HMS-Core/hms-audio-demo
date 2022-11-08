@@ -19,12 +19,14 @@
 buildscript {
 
     repositories {
-        google()
-        jcenter()
-        maven { url 'https://developer.huawei.com/repo/' }
+        maven { url 'https://cmc.centralrepo.rnd.huawei.com/artifactory/product_maven/'}
+        maven { url 'https://cmc.centralrepo.rnd.huawei.com/maven/' }
+
+        maven { url 'https://artifactory.cde.huawei.com/artifactory/maven-public/' }
+        maven { url 'https://artifactory.cde.huawei.com/artifactory/Product-Binary-Release/' }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.2'
+        classpath 'com.android.tools.build:gradle:4.0.1'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -33,9 +35,11 @@ buildscript {
 
 allprojects {
     repositories {
-        google()
-        jcenter()
-        maven { url 'https://developer.huawei.com/repo/' }
+        maven { url 'https://cmc.centralrepo.rnd.huawei.com/artifactory/product_maven/'}
+        maven { url 'https://cmc.centralrepo.rnd.huawei.com/maven/' }
+
+        maven { url 'https://artifactory.cde.huawei.com/artifactory/maven-public/' }
+        maven { url 'https://artifactory.cde.huawei.com/artifactory/Product-Binary-Release/' }
     }
 }
 
@@ -45,14 +49,14 @@ task clean(type: Delete) {
 
 ext {
     // VersionCode
-    versionCode = 10100300
-    versionName = "1.1.0.300"
+    versionCode = 10600300
+    versionName = "1.6.0.300"
 
     // Android Sdk and tools
     minSdkVersion = 19
-    targetSdkVersion = 28
-    compileSdkVersion = 29
-    buildToolsVersion = '29.0.3'
+    targetSdkVersion = 33
+    compileSdkVersion = 33
+    buildToolsVersion = '30.0.3'
 
     appVersionCode = versionCode
     appVersionName = versionName

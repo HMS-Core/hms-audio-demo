@@ -132,7 +132,8 @@ public class SubINotificationFactory implements INotificationFactory {
         Log.i(TAG, "getCancelPendingIntent");
         Intent closeIntent = new Intent(PlayActions.CANCEL_NOTIFICATION);
         closeIntent.setPackage(application.getPackageName());
-        return PendingIntent.getBroadcast(application, 2, closeIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        return PendingIntent.getBroadcast(application, 2, closeIntent,
+                Build.VERSION.SDK_INT > Build.VERSION_CODES.R ? PendingIntent.FLAG_IMMUTABLE : PendingIntent.FLAG_UPDATE_CURRENT);
     }
 
     /**
@@ -145,6 +146,7 @@ public class SubINotificationFactory implements INotificationFactory {
         intent.addCategory("android.intent.category.LAUNCHER");
         intent.setClass(application.getBaseContext(), MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
-        return PendingIntent.getActivity(application, 0, intent, 0);
+        return PendingIntent.getActivity(application, 0, intent,
+                Build.VERSION.SDK_INT > Build.VERSION_CODES.R ? PendingIntent.FLAG_IMMUTABLE : 0);
     }
 }

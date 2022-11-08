@@ -68,6 +68,7 @@
     <string name="sound_fantasy_acg_des">"声临其境，进入二次元的梦幻世界"</string>
 
     <string name="sound_effect">"音效"</string>
+    <string name="play_speed">"播放倍速"</string>
 
     <string name="rename_sound_effect">"自定义音效名称"</string>
     <string name="save">确定</string>

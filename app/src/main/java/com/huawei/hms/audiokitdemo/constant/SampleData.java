@@ -23,7 +23,6 @@ import android.provider.MediaStore;
 import android.util.Log;
 
 import com.huawei.hms.api.bean.HwAudioPlayItem;
-import com.huawei.hms.audiokitdemo.R;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -45,29 +44,30 @@ public class SampleData {
      */
     public List<HwAudioPlayItem> getOnlinePlaylist() {
         List<HwAudioPlayItem> playItemList = new ArrayList<>();
-        HwAudioPlayItem audioPlayItem1 = new HwAudioPlayItem();
-        audioPlayItem1.setAudioId("1000");
-        audioPlayItem1.setSinger("Taoge");
-        audioPlayItem1.setOnlinePath("https://lfmusicservice.hwcloudtest.cn:18084/HMS/audio/Taoge-chengshilvren.mp3");
-        audioPlayItem1.setOnline(1);
-        audioPlayItem1.setAudioTitle("chengshilvren");
-        playItemList.add(audioPlayItem1);
+        HwAudioPlayItem audioPlayItem4 = new HwAudioPlayItem();
+        audioPlayItem4.setAudioId("1003");
+        audioPlayItem4.setSinger("李昊瀚");
+        audioPlayItem4.setOnlinePath("http://mpge.5nd.com/2007/2007new/s/11670/7.mp3");
+        audioPlayItem4.setOnline(1);
+        audioPlayItem4.setAudioTitle("如果爱能早些说出来");
+        playItemList.add(audioPlayItem4);
 
-        HwAudioPlayItem audioPlayItem2 = new HwAudioPlayItem();
-        audioPlayItem2.setAudioId("1001");
-        audioPlayItem2.setSinger("Taoge");
-        audioPlayItem2.setOnlinePath("https://lfmusicservice.hwcloudtest.cn:18084/HMS/audio/Taoge-dayu.mp3");
-        audioPlayItem2.setOnline(1);
-        audioPlayItem2.setAudioTitle("dayu");
-        playItemList.add(audioPlayItem2);
+        HwAudioPlayItem audioPlayItem5 = new HwAudioPlayItem();
+        audioPlayItem5.setAudioId("1004");
+        audioPlayItem5.setSinger("沙宝亮");
+        audioPlayItem5.setOnlinePath("http://mpge.5nd.com/2010/2010b/2013-9-22/60951/8.mp3");
+        audioPlayItem5.setOnline(1);
+        audioPlayItem5.setAudioTitle("爱的省略号");
+        playItemList.add(audioPlayItem5);
 
-        HwAudioPlayItem audioPlayItem3 = new HwAudioPlayItem();
-        audioPlayItem3.setAudioId("1002");
-        audioPlayItem3.setSinger("Taoge");
-        audioPlayItem3.setOnlinePath("https://lfmusicservice.hwcloudtest.cn:18084/HMS/audio/Taoge-wangge.mp3");
-        audioPlayItem3.setOnline(1);
-        audioPlayItem3.setAudioTitle("wangge");
-        playItemList.add(audioPlayItem3);
+        HwAudioPlayItem audioPlayItem6 = new HwAudioPlayItem();
+        audioPlayItem6.setAudioId("1005");
+        audioPlayItem6.setSinger("徐誉滕");
+        audioPlayItem6.setOnlinePath("http://mpge.5nd.com/2015/2015-3-9/66167/2.mp3");
+        audioPlayItem6.setOnline(1);
+        audioPlayItem6.setAudioTitle("偶尔回忆");
+        playItemList.add(audioPlayItem6);
+
         return playItemList;
     }
 
@@ -85,10 +85,10 @@ public class SampleData {
                 return playItemList;
             }
             cursor = contentResolver.query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,
-                null,
-                null,
-                null,
-                MediaStore.Audio.Media.DEFAULT_SORT_ORDER);
+                    null,
+                    null,
+                    null,
+                    MediaStore.Audio.Media.DEFAULT_SORT_ORDER);
             HwAudioPlayItem songItem;
             if (cursor != null) {
                 while (cursor.moveToNext()) {
@@ -96,12 +96,12 @@ public class SampleData {
                     if (new File(path).exists()) {
                         songItem = new HwAudioPlayItem();
                         songItem.setAudioTitle(
-                            cursor.getString(cursor.getColumnIndexOrThrow(MediaStore.Audio.Media.DISPLAY_NAME)));
+                                cursor.getString(cursor.getColumnIndexOrThrow(MediaStore.Audio.Media.DISPLAY_NAME)));
                         songItem
-                            .setAudioId(cursor.getLong(cursor.getColumnIndexOrThrow(MediaStore.Audio.Media._ID)) + "");
+                                .setAudioId(cursor.getLong(cursor.getColumnIndexOrThrow(MediaStore.Audio.Media._ID)) + "");
                         songItem.setFilePath(path);
                         songItem
-                            .setSinger(cursor.getString(cursor.getColumnIndexOrThrow(MediaStore.Audio.Media.ARTIST)));
+                                .setSinger(cursor.getString(cursor.getColumnIndexOrThrow(MediaStore.Audio.Media.ARTIST)));
                         playItemList.add(songItem);
                     }
                 }

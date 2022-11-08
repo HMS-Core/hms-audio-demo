@@ -66,6 +66,26 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/play_speed"
+            android:id="@+id/tv_play_speed"
+            android:layout_marginStart="24dp"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="---"
+            android:id="@+id/tv_cur_play_speed"
+            android:layout_marginStart="14dp"
+            android:textColor="@color/windowBackground_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
@@ -129,11 +149,10 @@
             android:layout_height="36dp"
             android:layout_below="@id/pro_layout"
             android:layout_alignParentEnd="true"
+            android:layout_marginTop="14.5dp"
             android:layout_marginEnd="16dp"
-            android:src="@drawable/menu_more_normal"
             android:scaleType="center"
-            android:layout_marginTop="14.5dp">
-        </ImageView>
+            android:src="@drawable/menu_more_normal"></ImageView>
         <FrameLayout
             android:id="@+id/playback_play_layout"
             android:layout_width="wrap_content"

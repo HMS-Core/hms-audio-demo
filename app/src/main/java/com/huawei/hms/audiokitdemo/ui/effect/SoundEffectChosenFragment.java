@@ -180,6 +180,7 @@ public class SoundEffectChosenFragment extends BaseUIFragment {
             // sound effect set success
             if (i == 0) {
                 chooseAdapter.setSelect(pos, true);
+                SoundEffectHelper.getInstance().setSoundChosenLightOn(true);
                 chosenSoundEffectSwitchAdapter.notifyDataSetChanged();
             }
         }

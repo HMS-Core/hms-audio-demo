@@ -202,7 +202,6 @@ public class SoundEffectOrdinaryFragment extends BaseUIFragment {
                 }
                 OrdinaryBean ordinaryBean = new OrdinaryBean(hwAudioEffectItem.getName());
                 ordinaryBean.resId = hwAudioEffectItem.getResId();
-                ordinaryBean.type = hwAudioEffectItem.getType();
                 tempList.add(ordinaryBean);
             }
             adapter.setOrdinaryList(tempList);
