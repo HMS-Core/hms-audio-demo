@@ -33,8 +33,8 @@
 5. 在安卓设备或模拟机上运行测试应用。
 	
 ## 环境要求
-Android SDK：21及以上版本
-JDK：1.7及以上版本
+Android SDK：19及以上版本
+JDK：1.8及以上版本
 
 ## 运行结果
 <img src="audio.gif" width=30% > 
